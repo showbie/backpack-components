@@ -1,0 +1,37 @@
+{
+  "name": "@showbie/backpack-components",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "dist/backpack.js",
+  "module": "dist/backpack.js",
+  "scripts": {
+    "build": "node ./scripts/build.js --types"
+  },
+  "lint-staged": {
+    "*.{js,ts}": "eslint --fix",
+    "*.html": "prettier --write",
+    "package.json": "prettier --write"
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "dependencies": {
+    "lit": "2.0.2"
+  },
+  "devDependencies": {
+    "@showbie/eslint-config-typescript": "6.0.0",
+    "@swc/cli": "0.1.55",
+    "@swc/core": "1.2.120",
+    "command-line-args": "5.2.0",
+    "esbuild": "0.14.5",
+    "eslint": "8.4.1",
+    "globby": "12.0.2",
+    "husky": "7.0.4",
+    "lint-staged": "12.1.2",
+    "mri": "1.2.0",
+    "prettier": "2.5.1",
+    "prettier-plugin-packagejson": "2.2.15",
+    "typescript": "4.5.4"
+  },
+  "customElements": "dist/custom-elements.json"
+}
